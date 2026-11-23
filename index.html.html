@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spesial Hari Guru Nasional - MTs. Negeri 1 Boalemo</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            madrasah: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in { animation: fadeIn 0.35s ease-out forwards; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .pulse-dot {
+      animation: pulseDot 1.8s infinite;
+    }
+    @keyframes pulseDot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.45); opacity: 0.45; }
+    }
+    #confetti-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-200 selection:text-emerald-900 min-h-screen flex flex-col">
+
+  <!-- Definisi SVG Vektor Logo MTs. Negeri 1 Boalemo (Fallback Otomatis Kualitas Tajam) -->
+  <svg width="0" height="0" class="absolute pointer-events-none" aria-hidden="true">
+    <defs>
+      <path id="mtsn-ribbon-text-path" d="M 60 153 Q 100 174 140 153" />
+      <symbol id="logo-mtsn1-boalemo" viewBox="0 0 200 200">
+        <path
+          d="M 100 8 C 122 29, 152 33, 163 54 C 174 71, 187 72, 192 75 C 185 103, 187 132, 173 158 C 165 172, 159 181, 155 186 C 132 184, 115 193, 100 194 C 85 193, 68 184, 45 186 C 41 181, 35 172, 27 158 C 13 132, 15 103, 8 75 C 13 72, 26 71, 37 54 C 48 33, 78 29, 100 8 Z"
+          fill="#00983A"
+          stroke="#FFEE00"
+          stroke-width="6"
+          stroke-linejoin="round"
+        />
+        <polygon
+          points="100,22 104.2,33 116,33 106.5,40 110,51 100,44.2 90,51 93.5,40 84,33 95.8,33"
+          fill="#EAB308"
+        />
+        <g stroke="#FFFFFF" stroke-width="1.3" stroke-linejoin="round">
+          <path d="M 100 50 L 109 86 L 91 86 Z" fill="#1F2E2D" />
+          <path d="M 100 56 L 100 85" stroke="#FFFFFF" stroke-width="1.1" />
+          <rect x="88" y="88" width="24" height="19" rx="1.5" fill="#1F2E2D" />
+          <line x1="95" y1="88" x2="95" y2="107" />
+          <line x1="105" y1="88" x2="105" y2="107" />
+          <path d="M 83 107 L 117 107 L 114 112 L 86 112 Z" fill="#1F2E2D" />
+        </g>
+        <path d="M 84 134 L 116 153 L 112 156 L 80 137 Z" fill="#1F2E2D" stroke="#FFFFFF" stroke-width="1" />
+        <path d="M 116 134 L 84 153 L 88 156 L 120 137 Z" fill="#1F2E2D" stroke="#FFFFFF" stroke-width="1" />
+        <g stroke="#1F2E2D" stroke-width="1.5" stroke-linejoin="round">
+          <path d="M 100 117 Q 92 111 84 114 L 79 134 Q 89 131 100 137 Z" fill="#FFFFFF" />
+          <path d="M 100 117 Q 108 111 116 114 L 121 134 Q 111 131 100 137 Z" fill="#FFFFFF" />
+          <path d="M 85 119 Q 91 117 96 120 M 84 124 Q 90 122 96 125 M 83 129 Q 89 127 96 130" fill="none" stroke="#64748B" stroke-width="0.9" />
+          <path d="M 115 119 Q 109 117 104 120 M 116 124 Q 110 122 104 125 M 117 129 Q 111 127 104 130" fill="none" stroke="#64748B" stroke-width="0.9" />
+        </g>
+        <path d="M 65 145 C 40 124, 42 78, 80 57" fill="none" stroke="#84CC16" stroke-width="2.4" stroke-linecap="round" />
+        <g fill="#FFFFFF" stroke="#65A30D" stroke-width="1.2">
+          <circle cx="58" cy="133" r="4.2" /><circle cx="51" cy="120" r="4.2" />
+          <circle cx="48" cy="105" r="4.2" /><circle cx="50" cy="91" r="4.2" />
+          <circle cx="56" cy="78" r="4.2" /><circle cx="65" cy="67" r="4.2" />
+          <circle cx="76" cy="59" r="4" /><circle cx="64" cy="124" r="3.6" />
+          <circle cx="59" cy="109" r="3.6" /><circle cx="61" cy="94" r="3.6" />
+          <circle cx="66" cy="80" r="3.6" /><circle cx="75" cy="69" r="3.6" />
+        </g>
+        <path d="M 135 145 C 160 124, 158 78, 120 57" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" />
+        <g fill="#F59E0B" stroke="#92400E" stroke-width="0.9">
+          <ellipse cx="144" cy="134" rx="5.5" ry="2.4" transform="rotate(-35 144 134)" />
+          <ellipse cx="149" cy="123" rx="5.5" ry="2.4" transform="rotate(-25 149 123)" />
+          <ellipse cx="152" cy="111" rx="5.5" ry="2.4" transform="rotate(-15 152 111)" />
+          <ellipse cx="153" cy="99" rx="5.5" ry="2.4" transform="rotate(-5 153 99)" />
+          <ellipse cx="150" cy="87" rx="5.5" ry="2.4" transform="rotate(10 150 87)" />
+          <ellipse cx="144" cy="76" rx="5.5" ry="2.4" transform="rotate(25 144 76)" />
+          <ellipse cx="136" cy="67" rx="5.5" ry="2.4" transform="rotate(40 136 67)" />
+          <ellipse cx="126" cy="60" rx="5.5" ry="2.4" transform="rotate(52 126 60)" />
+          <ellipse cx="137" cy="126" rx="5" ry="2.2" transform="rotate(25 137 126)" />
+          <ellipse cx="141" cy="114" rx="5" ry="2.2" transform="rotate(30 141 114)" />
+          <ellipse cx="142" cy="102" rx="5" ry="2.2" transform="rotate(35 142 102)" />
+          <ellipse cx="140" cy="90" rx="5" ry="2.2" transform="rotate(42 140 90)" />
+          <ellipse cx="134" cy="79" rx="5" ry="2.2" transform="rotate(50 134 79)" />
+          <ellipse cx="126" cy="70" rx="5" ry="2.2" transform="rotate(60 126 70)" />
+        </g>
+        <g stroke="#1F2E2D" stroke-width="1.6" stroke-linejoin="round">
+          <path d="M 40 142 L 62 146 L 56 162 L 38 158 L 45 150 Z" fill="#E2E8F0" />
+          <path d="M 160 142 L 138 146 L 144 162 L 162 158 L 155 150 Z" fill="#E2E8F0" />
+          <path d="M 56 141 Q 100 165 144 141 L 149 156 Q 100 181 51 156 Z" fill="#FFFFFF" />
+        </g>
+        <text fill="#1F2E2D" font-family="Inter, Arial, sans-serif" font-size="9.2" font-weight="900" letter-spacing="0.3">
+          <textPath href="#mtsn-ribbon-text-path" startOffset="50%" text-anchor="middle">MTs. NEGERI 1 BOALEMO</textPath>
+        </text>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="fixed top-4 right-4 z-50 flex flex-col gap-2 max-w-sm w-[calc(100%-2rem)] sm:w-auto pointer-events-none"></div>
+
+  <!-- Navbar / Header -->
+  <header class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-800 text-white shadow-lg sticky top-0 z-40 border-b border-emerald-700/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20 gap-3">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-11 h-11 sm:w-13 sm:h-13 rounded-2xl bg-white/10 p-1 flex items-center justify-center shadow-md shrink-0 ring-1 ring-white/20">
+            <img
+              src="WhatsApp_Image_2023-01-02_at_12.10.48-removebg-preview.png"
+              alt="Logo MTs. Negeri 1 Boalemo"
+              class="w-full h-full object-contain drop-shadow"
+              onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+            />
+            <svg class="hidden w-full h-full drop-shadow" aria-label="Logo MTs. Negeri 1 Boalemo">
+              <use href="#logo-mtsn1-boalemo"></use>
+            </svg>
+          </div>
+          <div class="truncate">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-semibold uppercase tracking-wider text-amber-300">Hari Guru Nasional</span>
+              <span class="hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-950/60 border border-emerald-500/30 text-emerald-200">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-dot"></span>
+                Live
+              </span>
+            </div>
+            <h1 class="text-base sm:text-xl font-extrabold tracking-tight truncate">MTs. Negeri 1 Boalemo</h1>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 shrink-0">
+          <button
+            id="btn-open-sheet-modal"
+            type="button"
+            class="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 text-xs sm:text-sm font-semibold transition active:scale-95"
+            title="Pengaturan Google Spreadsheet"
+          >
+            <i data-lucide="sheet" class="w-4 h-4 text-amber-300"></i>
+            <span class="hidden md:inline">Spreadsheet</span>
+            <span id="sheet-status-dot" class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-emerald-900 to-emerald-800 text-white pt-6 pb-14 sm:pt-10 sm:pb-20">
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+      </svg>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="mx-auto w-20 h-20 sm:w-24 sm:h-24 mb-4 p-1.5 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 shadow-xl flex items-center justify-center">
+        <img
+          src="WhatsApp_Image_2023-01-02_at_12.10.48-removebg-preview.png"
+          alt="Logo MTs. Negeri 1 Boalemo"
+          class="w-full h-full object-contain drop-shadow-md"
+          onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+        />
+        <svg class="hidden w-full h-full drop-shadow-md" aria-label="Logo MTs. Negeri 1 Boalemo">
+          <use href="#logo-mtsn1-boalemo"></use>
+        </svg>
+      </div>
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/15 border border-amber-300/30 text-amber-200 text-xs sm:text-sm font-medium mb-4">
+        <i data-lucide="sparkles" class="w-4 h-4 text-amber-300"></i>
+        <span>Apresiasi &amp; Penghargaan Guru Favorit Siswa</span>
+      </div>
+      <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight max-w-3xl mx-auto">
+        Terima Kasih Guruku, <span class="text-amber-300">Pelita Ilmu</span> MTsN 1 Boalemo
+      </h2>
+      <p class="mt-3 sm:mt-4 text-sm sm:text-base text-emerald-100/90 max-w-2xl mx-auto leading-relaxed">
+        Pilih guru favoritmu secara langsung, pantau perolehan suara secara <em>real-time</em>, dan kirimkan surat ucapan spesial Hari Guru yang akan tersimpan otomatis di Spreadsheet sekolah.
+      </p>
+
+      <!-- Live Summary Metrics -->
+      <div class="mt-7 sm:mt-9 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto">
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-3.5 sm:p-4 text-left">
+          <div class="flex items-center justify-between text-emerald-200 text-xs font-medium">
+            <span>Total Suara</span>
+            <i data-lucide="vote" class="w-4 h-4 text-amber-300"></i>
+          </div>
+          <div id="stat-total-votes" class="mt-1.5 text-2xl sm:text-3xl font-extrabold text-white">0</div>
+          <div class="text-[11px] text-emerald-200/80 mt-0.5">Partisipasi siswa</div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-3.5 sm:p-4 text-left">
+          <div class="flex items-center justify-between text-emerald-200 text-xs font-medium">
+            <span>Surat &amp; Ucapan</span>
+            <i data-lucide="mail-heart" class="w-4 h-4 text-rose-300"></i>
+          </div>
+          <div id="stat-total-letters" class="mt-1.5 text-2xl sm:text-3xl font-extrabold text-white">0</div>
+          <div class="text-[11px] text-emerald-200/80 mt-0.5">Pesan terkirim</div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-3.5 sm:p-4 text-left">
+          <div class="flex items-center justify-between text-emerald-200 text-xs font-medium">
+            <span>Jumlah Guru</span>
+            <i data-lucide="users" class="w-4 h-4 text-sky-300"></i>
+          </div>
+          <div id="stat-total-teachers" class="mt-1.5 text-2xl sm:text-3xl font-extrabold text-white">33</div>
+          <div class="text-[11px] text-emerald-200/80 mt-0.5">Kandidat guru favorit</div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-3.5 sm:p-4 text-left">
+          <div class="flex items-center justify-between text-emerald-200 text-xs font-medium">
+            <span>Peringkat #1</span>
+            <i data-lucide="trophy" class="w-4 h-4 text-amber-300"></i>
+          </div>
+          <div id="stat-top-teacher" class="mt-1.5 text-sm sm:text-base font-bold text-amber-300 truncate">Belum ada suara</div>
+          <div id="stat-top-votes" class="text-[11px] text-emerald-200/80 mt-0.5">Menunggu vote pertama</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 -mt-8 pb-16 relative z-10">
+
+    <!-- Navigation Tabs -->
+    <div class="bg-white rounded-2xl shadow-md border border-slate-200/80 p-1.5 sm:p-2 mb-6 flex flex-wrap sm:flex-nowrap gap-1.5">
+      <button
+        type="button"
+        data-tab="vote"
+        class="tab-btn flex-1 flex items-center justify-center gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold transition bg-emerald-700 text-white shadow-sm"
+      >
+        <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+        <span>Voting Guru</span>
+      </button>
+      <button
+        type="button"
+        data-tab="realtime"
+        class="tab-btn flex-1 flex items-center justify-center gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold transition text-slate-600 hover:bg-slate-100"
+      >
+        <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+        <span>Live Count</span>
+      </button>
+      <button
+        type="button"
+        data-tab="letters"
+        class="tab-btn flex-1 flex items-center justify-center gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold transition text-slate-600 hover:bg-slate-100"
+      >
+        <i data-lucide="mail-open" class="w-4 h-4"></i>
+        <span>Surat &amp; Ucapan</span>
+      </button>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- TAB 1: VOTING GURU FAVORIT                                -->
+    <!-- ========================================================= -->
+    <section id="panel-vote" class="tab-panel fade-in">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-4 mb-6 flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between">
+        <div class="relative flex-1">
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+          <input
+            id="search-teacher"
+            type="text"
+            placeholder="Cari nama Bapak/Ibu Guru atau mata pelajaran..."
+            class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm transition"
+          />
+        </div>
+        <div class="flex items-center gap-2.5">
+          <select
+            id="filter-subject"
+            class="w-full md:w-56 px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm font-medium text-slate-700"
+          >
+            <option value="ALL">Semua Mata Pelajaran</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="teacher-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5"></div>
+
+      <div id="teacher-empty" class="hidden bg-white rounded-2xl border border-slate-200 p-10 text-center">
+        <div class="w-14 h-14 rounded-2xl bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="search-x" class="w-7 h-7"></i>
+        </div>
+        <h3 class="text-base font-bold text-slate-800">Guru tidak ditemukan</h3>
+        <p class="text-sm text-slate-500 mt-1">Coba gunakan kata kunci nama atau pilih kategori mata pelajaran lain.</p>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- TAB 2: PANTAUAN REAL-TIME (LIVE COUNT)                    -->
+    <!-- ========================================================= -->
+    <section id="panel-realtime" class="tab-panel hidden fade-in space-y-6">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+            <i data-lucide="activity" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="text-base sm:text-lg font-extrabold text-slate-800">Hasil Voting Real-Time</h3>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-dot"></span>
+                Otomatis Diperbarui
+              </span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-500">Perolehan suara sementara Guru Favorit MTs. Negeri 1 Boalemo</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button
+            id="btn-refresh-sheet"
+            type="button"
+            class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs sm:text-sm font-semibold transition active:scale-95"
+          >
+            <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+            <span>Sinkronkan</span>
+          </button>
+          <button
+            id="btn-export-votes-csv"
+            type="button"
+            class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-xs sm:text-sm font-semibold transition active:scale-95"
+          >
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>Export CSV</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="podium-container" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-200/80 p-4 sm:p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h4 class="text-base font-bold text-slate-800 flex items-center gap-2">
+              <i data-lucide="list-ordered" class="w-5 h-5 text-emerald-600"></i>
+              Klasemen Lengkap (33 Guru)
+            </h4>
+            <span id="leaderboard-total-badge" class="text-xs font-semibold text-slate-500">0 total suara</span>
+          </div>
+          <div id="leaderboard-list" class="space-y-3 max-h-[540px] overflow-y-auto pr-1"></div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-4 sm:p-6 flex flex-col">
+          <div class="flex items-center justify-between mb-4">
+            <h4 class="text-base font-bold text-slate-800 flex items-center gap-2">
+              <i data-lucide="clock" class="w-5 h-5 text-amber-500"></i>
+              Vote Masuk Terbaru
+            </h4>
+          </div>
+          <div id="recent-votes-list" class="space-y-2.5 flex-1 max-h-[540px] overflow-y-auto pr-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- TAB 3: SURAT & UCAPAN SELAMAT HARI GURU                   -->
+    <!-- ========================================================= -->
+    <section id="panel-letters" class="tab-panel hidden fade-in">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 sm:p-6 sticky top-24">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-rose-500 to-amber-500 text-white flex items-center justify-center shadow-sm">
+                <i data-lucide="pen-tool" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-extrabold text-slate-800">Kirim Surat &amp; Ucapan</h3>
+                <p class="text-xs text-slate-500">Ungkapkan rasa terima kasihmu untuk guru tercinta</p>
+              </div>
+            </div>
+
+            <form id="letter-form" class="space-y-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Nama Lengkap Siswa <span class="text-rose-500">*</span></label>
+                <input
+                  id="letter-student-name"
+                  type="text"
+                  required
+                  placeholder="Contoh: Ahmad Fauzan"
+                  class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm"
+                />
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1.5">Tingkat Kelas <span class="text-rose-500">*</span></label>
+                  <select
+                    id="letter-class-grade"
+                    required
+                    class="w-full px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm"
+                  >
+                    <option value="">Pilih Tingkat</option>
+                    <option value="VII">Kelas VII</option>
+                    <option value="VIII">Kelas VIII</option>
+                    <option value="IX">Kelas IX</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1.5">Rombel / Ruang <span class="text-rose-500">*</span></label>
+                  <input
+                    id="letter-class-room"
+                    type="text"
+                    required
+                    placeholder="Contoh: A / 1"
+                    maxlength="10"
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm uppercase"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Kepada Yth. Bapak/Ibu Guru <span class="text-rose-500">*</span></label>
+                <select
+                  id="letter-teacher-select"
+                  required
+                  class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm"
+                >
+                  <option value="">-- Pilih Guru Tujuan --</option>
+                  <option value="Seluruh Bapak/Ibu Guru MTsN 1 Boalemo">Seluruh Bapak/Ibu Guru MTsN 1 Boalemo</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Tema Kartu Ucapan</label>
+                <div class="grid grid-cols-4 gap-2" id="theme-selector">
+                  <button type="button" data-theme="emerald" class="theme-chip active-theme py-2 rounded-xl border-2 border-emerald-600 bg-emerald-50 text-emerald-800 text-xs font-bold transition">Madrasah</button>
+                  <button type="button" data-theme="amber" class="theme-chip py-2 rounded-xl border border-slate-200 bg-amber-50 text-amber-800 text-xs font-bold transition">Emas</button>
+                  <button type="button" data-theme="rose" class="theme-chip py-2 rounded-xl border border-slate-200 bg-rose-50 text-rose-800 text-xs font-bold transition">Mawar</button>
+                  <button type="button" data-theme="sky" class="theme-chip py-2 rounded-xl border border-slate-200 bg-sky-50 text-sky-800 text-xs font-bold transition">Langit</button>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <label class="block text-xs font-bold text-slate-700">Isi Surat / Ucapan <span class="text-rose-500">*</span></label>
+                  <button type="button" id="btn-inspire-msg" class="text-[11px] font-semibold text-emerald-700 hover:text-emerald-900 inline-flex items-center gap-1">
+                    <i data-lucide="sparkles" class="w-3 h-3"></i>
+                    Inspirasi Kata
+                  </button>
+                </div>
+                <textarea
+                  id="letter-message"
+                  rows="4"
+                  required
+                  maxlength="600"
+                  placeholder="Tuliskan ucapan selamat Hari Guru, doa, atau kenangan berkesan bersama Bapak/Ibu guru..."
+                  class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm resize-none"
+                ></textarea>
+                <div class="text-right text-[11px] text-slate-400 mt-1"><span id="letter-char-count">0</span>/600 karakter</div>
+              </div>
+
+              <button
+                id="btn-submit-letter"
+                type="submit"
+                class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-700 to-teal-700 hover:from-emerald-800 hover:to-teal-800 text-white font-bold text-sm shadow-md hover:shadow-lg transition active:scale-[0.98] flex items-center justify-center gap-2"
+              >
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Kirim Surat &amp; Simpan ke Spreadsheet</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4">
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <h3 class="text-base font-extrabold text-slate-800 flex items-center gap-2">
+                <i data-lucide="message-square-heart" class="w-5 h-5 text-rose-500"></i>
+                Dinding Surat &amp; Ucapan
+              </h3>
+              <p class="text-xs text-slate-500">Klik kartu untuk membaca surat secara penuh</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <select
+                id="filter-letter-teacher"
+                class="flex-1 sm:w-52 px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
+              >
+                <option value="ALL">Semua Guru</option>
+              </select>
+              <button
+                id="btn-export-letters-csv"
+                type="button"
+                class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-xs font-semibold transition shrink-0"
+                title="Download Rekap Ucapan CSV"
+              >
+                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                <span class="hidden sm:inline">CSV</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="letters-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+
+          <div id="letters-empty" class="bg-white rounded-2xl border border-dashed border-slate-300 p-10 text-center">
+            <div class="w-14 h-14 rounded-2xl bg-rose-50 text-rose-400 flex items-center justify-center mx-auto mb-3">
+              <i data-lucide="mail-plus" class="w-7 h-7"></i>
+            </div>
+            <h4 class="text-sm font-bold text-slate-700">Belum ada surat ucapan</h4>
+            <p class="text-xs text-slate-500 mt-1">Jadilah siswa pertama yang mengirimkan ucapan spesial Hari Guru!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 shrink-0 flex items-center justify-center">
+          <img
+            src="WhatsApp_Image_2023-01-02_at_12.10.48-removebg-preview.png"
+            alt="Logo MTs. Negeri 1 Boalemo"
+            class="w-full h-full object-contain"
+            onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+          />
+          <svg class="hidden w-full h-full" aria-label="Logo MTs. Negeri 1 Boalemo">
+            <use href="#logo-mtsn1-boalemo"></use>
+          </svg>
+        </div>
+        <span class="font-bold text-emerald-800">MTs. Negeri 1 Boalemo</span>
+        <span>•</span>
+        <span>Aplikasi Spesial Hari Guru Nasional</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a
+          href="https://docs.google.com/spreadsheets/d/1e-YanVSDQS75q7xO6WeOgACsHDxO1ZFT4IIqKRrXDHs/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-emerald-700 hover:underline font-semibold inline-flex items-center gap-1"
+        >
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          Buka Google Spreadsheet
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL 1: KONFIRMASI VOTE -->
+  <div id="vote-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden fade-in">
+      <div class="bg-gradient-to-r from-emerald-800 to-teal-700 px-6 py-5 text-white flex items-center justify-between">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider font-semibold text-amber-300">Konfirmasi Pilihan</span>
+          <h3 class="text-lg font-extrabold">Vote Guru Favorit</h3>
+        </div>
+        <button type="button" id="close-vote-modal" class="p-2 rounded-xl hover:bg-white/15 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form id="vote-form" class="p-6 space-y-4">
+        <div class="flex items-center gap-3.5 p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200/80">
+          <div id="modal-teacher-avatar" class="w-12 h-12 rounded-2xl bg-emerald-700 text-white font-extrabold flex items-center justify-center text-base shrink-0">
+            GR
+          </div>
+          <div class="min-w-0">
+            <div id="modal-teacher-name" class="font-extrabold text-slate-900 text-sm sm:text-base truncate">Nama Guru</div>
+            <div id="modal-teacher-subject" class="text-xs font-semibold text-emerald-700 truncate">Mata Pelajaran</div>
+          </div>
+        </div>
+
+        <input type="hidden" id="vote-teacher-id" />
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1.5">Nama Lengkap Siswa <span class="text-rose-500">*</span></label>
+          <input
+            id="vote-student-name"
+            type="text"
+            required
+            placeholder="Masukkan nama lengkap Anda"
+            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm"
+          />
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">Tingkat Kelas <span class="text-rose-500">*</span></label>
+            <select
+              id="vote-class-grade"
+              required
+              class="w-full px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm"
+            >
+              <option value="">Pilih Tingkat</option>
+              <option value="VII">Kelas VII</option>
+              <option value="VIII">Kelas VIII</option>
+              <option value="IX">Kelas IX</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">Rombel / Ruang <span class="text-rose-500">*</span></label>
+            <input
+              id="vote-class-room"
+              type="text"
+              required
+              placeholder="Contoh: A / 1"
+              maxlength="10"
+              class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm uppercase"
+            />
+          </div>
+        </div>
+
+        <div class="pt-1">
+          <label class="flex items-center gap-2.5 cursor-pointer select-none">
+            <input id="vote-include-letter" type="checkbox" class="w-4 h-4 rounded text-emerald-600 focus:ring-emerald-500 border-slate-300" />
+            <span class="text-xs font-semibold text-slate-700">Sekaligus kirim ucapan singkat untuk guru ini?</span>
+          </label>
+          <div id="vote-quick-letter-wrap" class="hidden mt-2.5">
+            <textarea
+              id="vote-quick-letter"
+              rows="3"
+              maxlength="400"
+              placeholder="Tulis ucapan selamat Hari Guru singkat di sini..."
+              class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500 text-sm resize-none"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2.5 pt-2">
+          <button
+            type="button"
+            id="cancel-vote-modal"
+            class="flex-1 py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm transition"
+          >
+            Batal
+          </button>
+          <button
+            id="btn-confirm-vote"
+            type="submit"
+            class="flex-[1.6] py-2.5 px-4 rounded-xl bg-gradient-to-r from-emerald-700 to-teal-700 hover:from-emerald-800 hover:to-teal-800 text-white font-bold text-sm shadow-md transition active:scale-95 flex items-center justify-center gap-2"
+          >
+            <i data-lucide="heart-handshake" class="w-4 h-4"></i>
+            <span>Kirim Vote Sekarang</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 2: BACA SURAT SECARA PENUH -->
+  <div id="letter-view-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+    <div id="letter-view-card" class="bg-white rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden fade-in border-t-8 border-emerald-600">
+      <div class="p-6 sm:p-7">
+        <div class="flex items-start justify-between gap-4 mb-4">
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Surat Spesial Hari Guru</span>
+            <h3 id="view-letter-teacher" class="text-lg font-extrabold text-slate-900 mt-0.5">Kepada Yth. Guru</h3>
+          </div>
+          <button type="button" id="close-letter-view" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 transition">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200/70 my-4">
+          <p id="view-letter-body" class="text-slate-700 text-sm sm:text-base leading-relaxed whitespace-pre-line italic"></p>
+        </div>
+
+        <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+          <div>
+            <div class="text-xs text-slate-400">Dari Siswa:</div>
+            <div id="view-letter-sender" class="text-sm font-extrabold text-slate-800">Nama Siswa</div>
+          </div>
+          <div id="view-letter-time" class="text-xs font-medium text-slate-400">Baru saja</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: PENGATURAN & KONEKSI GOOGLE SPREADSHEET -->
+  <div id="sheet-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] flex flex-col overflow-hidden fade-in">
+      <div class="bg-gradient-to-r from-emerald-900 to-teal-800 px-6 py-4 text-white flex items-center justify-between shrink-0">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-white/15 flex items-center justify-center">
+            <i data-lucide="sheet" class="w-5 h-5 text-amber-300"></i>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-extrabold">Integrasi Google Spreadsheet</h3>
+            <p class="text-xs text-emerald-200">Simpan otomatis seluruh Voting &amp; Surat ke Spreadsheet Anda</p>
+          </div>
+        </div>
+        <button type="button" id="close-sheet-modal" class="p-2 rounded-xl hover:bg-white/15 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="p-6 overflow-y-auto space-y-5 text-sm">
+        <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="min-w-0">
+            <div class="text-xs font-bold text-emerald-800">Target Spreadsheet MTs. Negeri 1 Boalemo:</div>
+            <div class="text-xs text-emerald-700 truncate font-mono mt-0.5">ID: 1e-YanVSDQS75q7xO6WeOgACsHDxO1ZFT4IIqKRrXDHs</div>
+          </div>
+          <a
+            href="https://docs.google.com/spreadsheets/d/1e-YanVSDQS75q7xO6WeOgACsHDxO1ZFT4IIqKRrXDHs/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold transition shrink-0"
+          >
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            Buka Sheet
+          </a>
+        </div>
+
+        <div class="space-y-2">
+          <label class="block text-xs font-extrabold text-slate-800 uppercase tracking-wide">
+            1. URL Web App Google Apps Script Aktif
+          </label>
+          <div class="flex flex-col sm:flex-row gap-2">
+            <input
+              id="gas-url-input"
+              type="url"
+              placeholder="https://script.google.com/macros/s/..../exec"
+              class="flex-1 px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40 text-xs sm:text-sm font-mono"
+            />
+            <button
+              id="btn-save-gas-url"
+              type="button"
+              class="px-4 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs sm:text-sm transition shrink-0"
+            >
+              Simpan &amp; Hubungkan
+            </button>
+          </div>
+          <p id="gas-status-text" class="text-xs text-slate-500">
+            Status: <span class="font-bold text-emerald-700">Terhubung Otomatis ke Google Spreadsheet</span>
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex items-center justify-between gap-2">
+            <label class="block text-xs font-extrabold text-slate-800 uppercase tracking-wide">
+              2. Kode Google Apps Script (Sudah Siap Pakai)
+            </label>
+            <button
+              id="btn-copy-gas-code"
+              type="button"
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-900 text-white text-xs font-semibold transition"
+            >
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              Salin Kode
+            </button>
+          </div>
+          <pre id="gas-code-block" class="bg-slate-900 text-emerald-300 p-4 rounded-xl text-[11px] font-mono overflow-x-auto max-h-56 leading-relaxed select-all"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- APPLICATION LOGIC                                         -->
+  <!-- ========================================================= -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { getFirestore, collection, doc, addDoc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    const SPREADSHEET_ID = "1e-YanVSDQS75q7xO6WeOgACsHDxO1ZFT4IIqKRrXDHs";
+    const DEFAULT_GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbw2aOqzPfkYTAolsa-NcyYPAR6EJbrzQezP7VTBMZDW7tT8KQPKWjskGOLq_rcbEPtLJA/exec";
+    const STORAGE_KEY = "mtsn1_boalemo_hariguru_cache_v1";
+
+    const TEACHERS = [
+      { id: 2,  name: "Fitriyanti Rauf, S.Pd",            subject: "Guru Matematika" },
+      { id: 3,  name: "Felda Ente, S.Pd",                 subject: "Guru Bahasa Indonesia" },
+      { id: 4,  name: "Syahril Nur, S.Pd., M.Pd., Gr.",   subject: "Guru Bahasa Inggris" },
+      { id: 5,  name: "Sartika Hauko, S.Pd",              subject: "Guru BK" },
+      { id: 6,  name: "Alvitra Z. Arief, S.Pd",           subject: "Guru BK" },
+      { id: 7,  name: "Serlin Lauha, S.Pd",               subject: "Guru Bahasa Indonesia" },
+      { id: 8,  name: "Ismail Usman, S.Pd.I",             subject: "Guru Al Qur'an Hadits" },
+      { id: 9,  name: "Pomi Karim, S.Pd.I",               subject: "Guru Al Qur'an Hadits" },
+      { id: 10, name: "Arlan Helingo, SH., Gr.",          subject: "Guru Pendidikan Pancasila" },
+      { id: 11, name: "Yanti Ismail, S.Pd.I",             subject: "Guru Fiqih" },
+      { id: 12, name: "Ewith Revalya Popodu, S.Pd",       subject: "Guru Seni" },
+      { id: 13, name: "Moh. Afandi R. Tahir, S.Pd",       subject: "Guru Matematika" },
+      { id: 14, name: "Yunita Fardhani, S.Si., Gr.",      subject: "Guru IPA" },
+      { id: 15, name: "Nolvi Moli, S.Pd",                 subject: "Guru IPS" },
+      { id: 16, name: "Alwan, S.Pd",                      subject: "Guru Bahasa Inggris" },
+      { id: 17, name: "Isnan Kakilo, S.Ag",               subject: "Guru Akidah Akhlak" },
+      { id: 18, name: "Zulkili Mantulangi, S.S., Gr.",    subject: "Guru Bahasa Inggris" },
+      { id: 19, name: "Abdul Rahman, S.Pd",               subject: "Guru IPS" },
+      { id: 20, name: "Rismayanti, S.Pd., Gr.",           subject: "Guru Bahasa Indonesia" },
+      { id: 21, name: "Ulin Harun, S.Pd., Gr.",           subject: "Guru Bahasa Indonesia" },
+      { id: 22, name: "Samsudin Ma'ruf, S.Pd",            subject: "Guru Fiqih" },
+      { id: 23, name: "Masrulkhalis, S.Pd., M.Pd., Gr.",  subject: "Guru Matematika" },
+      { id: 24, name: "Fatma Abas, S.Pd",                 subject: "Guru IPA" },
+      { id: 25, name: "Yayun Sau, S.Pd",                  subject: "Guru IPS" },
+      { id: 26, name: "Abdul Rasyid Zakaria, S.Si",       subject: "Guru IPA" },
+      { id: 27, name: "Monira Maruwae, S.Pd",             subject: "Guru Akidah Akhlak" },
+      { id: 28, name: "Hartono Hamid, M.Pd",              subject: "Guru Bahasa Arab" },
+      { id: 29, name: "Selfiyanti Uno, S.Pd",             subject: "Guru Bahasa Arab" },
+      { id: 30, name: "Dra. Sutriani Soim",               subject: "Guru Pendidikan Pancasila" },
+      { id: 31, name: "Nurain Nangi, S.Ag",               subject: "Guru SKI" },
+      { id: 32, name: "Surayun Biga, S.Pd",               subject: "Guru Bahasa Arab" },
+      { id: 33, name: "Djaria Nai, S.Pd",                 subject: "Guru IPS" },
+      { id: 34, name: "Zainun Mozin, S.Pd",               subject: "Guru IPS" }
+    ];
+
+    const INSPIRATION_MESSAGES = [
+      "Selamat Hari Guru Nasional! Terima kasih Bapak/Ibu atas kesabaran, ketulusan, dan ilmu yang selalu membimbing kami di MTs. Negeri 1 Boalemo. Semoga selalu sehat dan dalam lindungan Allah SWT.",
+      "Terima kasih telah menjadi pelita dalam gelap dan inspirasi di setiap langkah belajar kami. Jasa Bapak/Ibu tidak akan pernah kami lupakan. Selamat Hari Guru!",
+      "Selamat Hari Guru untuk guru favoritku! Cara mengajar Bapak/Ibu selalu membuat kelas menjadi seru dan mudah dipahami. Semoga segala kebaikan dibalas berlipat ganda.",
+      "Doa terbaik kami selalu menyertai Bapak/Ibu Guru. Terima kasih telah mendidik kami bukan hanya dengan ilmu, tetapi juga dengan akhlak mulia dan kasih sayang."
+    ];
+
+    const state = {
+      votes: [],
+      letters: [],
+      gasUrl: DEFAULT_GAS_WEBAPP_URL,
+      selectedTheme: "emerald",
+      activeTab: "vote",
+      searchQuery: "",
+      subjectFilter: "ALL",
+      letterTeacherFilter: "ALL",
+      firebaseReady: false,
+      currentUser: null,
+      db: null,
+      appId: typeof __app_id !== "undefined" ? __app_id : "mtsn1-boalemo-hari-guru"
+    };
+
+    const GAS_SCRIPT_CODE = `const SPREADSHEET_ID = '${SPREADSHEET_ID}';
+
+const HEADERS = {
+  Voting_Guru: ['Timestamp', 'Nama Siswa', 'Kelas', 'ID Guru', 'Nama Guru', 'Mata Pelajaran'],
+  Surat_Ucapan: ['Timestamp', 'Pengirim', 'Kelas', 'Untuk Guru', 'Mapel', 'Isi Surat', 'Tema Kartu']
+};
+
+function getTargetSpreadsheet(ss) {
+  if (ss && typeof ss.getSheetByName === 'function') return ss;
+  try {
+    return SpreadsheetApp.openById(SPREADSHEET_ID);
+  } catch (e) {
+    return SpreadsheetApp.getActiveSpreadsheet();
+  }
+}
+
+function ensureSheetWithHeader(ss, sheetName) {
+  const targetSheetName = sheetName || 'Voting_Guru';
+  const spreadsheet = getTargetSpreadsheet(ss);
+  let sheet = spreadsheet.getSheetByName(targetSheetName);
+  const expectedHeaders = HEADERS[targetSheetName] || HEADERS.Voting_Guru;
+  if (!sheet) sheet = spreadsheet.insertSheet(targetSheetName);
+
+  const firstRowValues = sheet.getRange(1, 1, 1, expectedHeaders.length).getValues()[0];
+  if (firstRowValues.every(cell => cell === '' || cell === null)) {
+    const headerRange = sheet.getRange(1, 1, 1, expectedHeaders.length);
+    headerRange.setValues([expectedHeaders])
+      .setFontWeight('bold')
+      .setBackground('#047857')
+      .setFontColor('#FFFFFF');
+    sheet.setFrozenRows(1);
+    sheet.autoResizeColumns(1, expectedHeaders.length);
+  }
+  return sheet;
+}
+
+function setupSheets() {
+  const ss = getTargetSpreadsheet();
+  ensureSheetWithHeader(ss, 'Voting_Guru');
+  ensureSheetWithHeader(ss, 'Surat_Ucapan');
+  SpreadsheetApp.flush();
+}
+
+function doGet(e) {
+  const ss = getTargetSpreadsheet();
+  const voteSheet = ensureSheetWithHeader(ss, 'Voting_Guru');
+  const letterSheet = ensureSheetWithHeader(ss, 'Surat_Ucapan');
+
+  const votes = voteSheet.getLastRow() > 1
+    ? voteSheet.getRange(2, 1, voteSheet.getLastRow() - 1, 6).getValues().map((r, i) => ({
+        id: 'gs-v-' + i,
+        createdAt: r[0],
+        studentName: r[1],
+        studentClass: r[2],
+        teacherId: Number(r[3]),
+        teacherName: r[4],
+        teacherSubject: r[5]
+      }))
+    : [];
+
+  const letters = letterSheet.getLastRow() > 1
+    ? letterSheet.getRange(2, 1, letterSheet.getLastRow() - 1, 7).getValues().map((r, i) => ({
+        id: 'gs-l-' + i,
+        createdAt: r[0],
+        studentName: r[1],
+        studentClass: r[2],
+        teacherName: r[3],
+        teacherSubject: r[4],
+        message: r[5],
+        theme: r[6] || 'emerald'
+      }))
+    : [];
+
+  return ContentService
+    .createTextOutput(JSON.stringify({ status: 'success', votes, letters }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function doPost(e) {
+  try {
+    const data = JSON.parse(e.postData.contents);
+    const ss = getTargetSpreadsheet();
+    const waktu = Utilities.formatDate(new Date(), 'Asia/Makassar', 'dd/MM/yyyy HH:mm:ss');
+
+    if (data.type === 'vote') {
+      const sheet = ensureSheetWithHeader(ss, 'Voting_Guru');
+      sheet.appendRow([waktu, data.studentName, data.studentClass, data.teacherId, data.teacherName, data.teacherSubject]);
+    } else if (data.type === 'letter') {
+      const sheet = ensureSheetWithHeader(ss, 'Surat_Ucapan');
+      sheet.appendRow([waktu, data.studentName, data.studentClass, data.teacherName, data.teacherSubject || '-', data.message, data.theme || 'emerald']);
+    }
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ status: 'success' }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ status: 'error', message: err.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}`;
+
+    function loadLocalCache() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed.votes)) state.votes = parsed.votes;
+        if (Array.isArray(parsed.letters)) state.letters = parsed.letters;
+        if (typeof parsed.gasUrl === "string" && parsed.gasUrl.trim()) {
+          state.gasUrl = parsed.gasUrl.trim();
+        }
+      } catch (e) {
+        console.warn("Cache lokal tidak dapat dibaca:", e);
+      }
+    }
+
+    function saveLocalCache() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+          votes: state.votes,
+          letters: state.letters,
+          gasUrl: state.gasUrl
+        }));
+      } catch (e) {
+        console.warn("Cache lokal tidak dapat disimpan:", e);
+      }
+    }
+
+    function getInitials(name) {
+      const clean = name.replace(/^(Dra\.|Drs\.|Moh\.|H\.|Hj\.)\s*/i, "");
+      const parts = clean.split(/[\s,]+/).filter(Boolean);
+      if (parts.length >= 2) return (parts[0][0] + parts[1][0]).toUpperCase();
+      return clean.substring(0, 2).toUpperCase();
+    }
+
+    function getSubjectColor(subject) {
+      const map = {
+        "Guru Matematika": "bg-indigo-100 text-indigo-800 border-indigo-200",
+        "Guru Bahasa Indonesia": "bg-rose-100 text-rose-800 border-rose-200",
+        "Guru Bahasa Inggris": "bg-sky-100 text-sky-800 border-sky-200",
+        "Guru Bahasa Arab": "bg-emerald-100 text-emerald-800 border-emerald-200",
+        "Guru IPA": "bg-teal-100 text-teal-800 border-teal-200",
+        "Guru IPS": "bg-amber-100 text-amber-800 border-amber-200",
+        "Guru BK": "bg-purple-100 text-purple-800 border-purple-200",
+        "Guru Fiqih": "bg-green-100 text-green-800 border-green-200",
+        "Guru Al Qur'an Hadits": "bg-emerald-100 text-emerald-900 border-emerald-300",
+        "Guru Akidah Akhlak": "bg-cyan-100 text-cyan-800 border-cyan-200",
+        "Guru SKI": "bg-orange-100 text-orange-800 border-orange-200",
+        "Guru Pendidikan Pancasila": "bg-red-100 text-red-800 border-red-200",
+        "Guru Seni": "bg-fuchsia-100 text-fuchsia-800 border-fuchsia-200"
+      };
+      return map[subject] || "bg-slate-100 text-slate-700 border-slate-200";
+    }
+
+    function getAvatarGradient(id) {
+      const gradients = [
+        "from-emerald-600 to-teal-700",
+        "from-amber-500 to-orange-600",
+        "from-sky-600 to-indigo-700",
+        "from-rose-500 to-pink-600",
+        "from-teal-600 to-cyan-700",
+        "from-violet-600 to-purple-700"
+      ];
+      return gradients[id % gradients.length];
+    }
+
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return "";
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function formatTime(isoOrNum) {
+      if (!isoOrNum) return "Baru saja";
+      const d = new Date(isoOrNum);
+      if (isNaN(d.getTime())) return String(isoOrNum);
+      return d.toLocaleString("id-ID", {
+        day: "2-digit",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit"
+      });
+    }
+
+    function showToast(message, type = "success") {
+      const container = document.getElementById("toast-container");
+      const toast = document.createElement("div");
+      const styles = {
+        success: "bg-emerald-800 text-white border-emerald-600",
+        error: "bg-rose-700 text-white border-rose-500",
+        info: "bg-slate-800 text-white border-slate-600"
+      };
+      const iconName = type === "success" ? "check-circle" : type === "error" ? "alert-circle" : "info";
+      toast.className = `pointer-events-auto flex items-center gap-2.5 px-4 py-3 rounded-2xl shadow-xl border text-xs sm:text-sm font-semibold fade-in ${styles[type] || styles.info}`;
+      toast.innerHTML = `<i data-lucide="${iconName}" class="w-4 h-4 shrink-0"></i><span>${escapeHtml(message)}</span>`;
+      container.appendChild(toast);
+      lucide.createIcons({ root: toast });
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transform = "translateY(-6px)";
+        toast.style.transition = "all 0.25s ease";
+        setTimeout(() => toast.remove(), 260);
+      }, 3600);
+    }
+
+    function launchConfetti() {
+      const canvas = document.getElementById("confetti-canvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      const colors = ["#10b981", "#f59e0b", "#ec4899", "#3b82f6", "#fbbf24", "#34d399"];
+      const particles = Array.from({ length: 75 }, () => ({
+        x: canvas.width / 2 + (Math.random() - 0.5) * 180,
+        y: canvas.height * 0.45,
+        vx: (Math.random() - 0.5) * 14,
+        vy: Math.random() * -13 - 4,
+        size: Math.random() * 7 + 4,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        rotation: Math.random() * 360,
+        vRot: (Math.random() - 0.5) * 12,
+        life: 1
+      }));
+
+      function frame() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let active = false;
+        for (const p of particles) {
+          if (p.life <= 0) continue;
+          active = true;
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.36;
+          p.rotation += p.vRot;
+          p.life -= 0.015;
+          ctx.save();
+          ctx.globalAlpha = Math.max(0, p.life);
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.6);
+          ctx.restore();
+        }
+        if (active) requestAnimationFrame(frame);
+        else ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      requestAnimationFrame(frame);
+    }
+
+    async function initFirebase() {
+      try {
+        if (typeof __firebase_config === "undefined") return;
+        const firebaseConfig = JSON.parse(__firebase_config);
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        if (typeof __initial_auth_token !== "undefined" && __initial_auth_token) {
+          await signInWithCustomToken(auth, __initial_auth_token);
+        } else {
+          await signInAnonymously(auth);
+        }
+
+        state.currentUser = auth.currentUser;
+        state.db = db;
+        state.firebaseReady = true;
+        if (!state.currentUser) return;
+
+        onSnapshot(collection(db, "artifacts", state.appId, "public", "data", "votes"), (snapshot) => {
+          const list = [];
+          snapshot.forEach((docSnap) => list.push({ id: docSnap.id, ...docSnap.data() }));
+          list.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+          state.votes = list;
+          saveLocalCache();
+          renderAll();
+        });
+
+        onSnapshot(collection(db, "artifacts", state.appId, "public", "data", "letters"), (snapshot) => {
+          const list = [];
+          snapshot.forEach((docSnap) => list.push({ id: docSnap.id, ...docSnap.data() }));
+          list.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+          state.letters = list;
+          saveLocalCache();
+          renderAll();
+        });
+
+        onSnapshot(doc(db, "artifacts", state.appId, "public", "data", "settings", "spreadsheet"), (docSnap) => {
+          if (docSnap.exists() && docSnap.data().gasUrl) {
+            state.gasUrl = docSnap.data().gasUrl;
+            saveLocalCache();
+            updateSpreadsheetStatusUI();
+          }
+        });
+      } catch (err) {
+        console.warn("Berjalan dalam mode GitHub/standalone:", err);
+      }
+    }
+
+    async function sendToGoogleSheet(payload) {
+      if (!state.gasUrl) return false;
+      try {
+        await fetch(state.gasUrl, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload)
+        });
+        return true;
+      } catch (err) {
+        console.error("Gagal kirim ke Google Sheet:", err);
+        return false;
+      }
+    }
+
+    async function fetchFromGoogleSheet(silent = false) {
+      if (!state.gasUrl) {
+        if (!silent) showToast("Data sudah diperbarui!", "info");
+        return;
+      }
+      try {
+        if (!silent) showToast("Menyinkronkan data dari Google Spreadsheet...", "info");
+        const res = await fetch(state.gasUrl);
+        const data = await res.json();
+        if (data.status === "success") {
+          if (!state.firebaseReady) {
+            state.votes = (data.votes || []).reverse();
+            state.letters = (data.letters || []).reverse();
+            saveLocalCache();
+            renderAll();
+          }
+          if (!silent) showToast("Sinkronisasi dengan Google Spreadsheet berhasil!", "success");
+        }
+      } catch (err) {
+        if (!silent) showToast("Pastikan Web App Apps Script sudah di-deploy dengan akses 'Siapa saja'.", "error");
+      }
+    }
+
+    function updateSpreadsheetStatusUI() {
+      const dot = document.getElementById("sheet-status-dot");
+      const statusText = document.getElementById("gas-status-text");
+      const input = document.getElementById("gas-url-input");
+      if (input && state.gasUrl) input.value = state.gasUrl;
+
+      if (state.gasUrl) {
+        dot.className = "w-2 h-2 rounded-full bg-emerald-400 pulse-dot";
+        statusText.innerHTML = 'Status: <span class="font-bold text-emerald-700">Terhubung Otomatis ke Google Spreadsheet</span>';
+      } else {
+        dot.className = "w-2 h-2 rounded-full bg-amber-400";
+        statusText.innerHTML = 'Status: <span class="font-bold text-amber-600">Belum terhubung ke URL Apps Script</span>';
+      }
+    }
+
+    function getTeacherVoteStats() {
+      const counts = {};
+      TEACHERS.forEach((t) => (counts[t.id] = 0));
+      state.votes.forEach((v) => {
+        if (counts[v.teacherId] !== undefined) counts[v.teacherId]++;
+      });
+
+      const total = state.votes.length;
+      return TEACHERS.map((t) => ({
+        ...t,
+        votes: counts[t.id] || 0,
+        percent: total > 0 ? ((counts[t.id] || 0) / total) * 100 : 0
+      }));
+    }
+
+    function renderSummaryStats() {
+      const stats = getTeacherVoteStats();
+      const sorted = [...stats].sort((a, b) => b.votes - a.votes);
+      const totalVotes = state.votes.length;
+      const totalLetters = state.letters.length;
+
+      document.getElementById("stat-total-votes").textContent = totalVotes;
+      document.getElementById("stat-total-letters").textContent = totalLetters;
+      document.getElementById("stat-total-teachers").textContent = TEACHERS.length;
+
+      if (totalVotes > 0 && sorted[0].votes > 0) {
+        document.getElementById("stat-top-teacher").textContent = sorted[0].name;
+        document.getElementById("stat-top-votes").textContent = `${sorted[0].votes} suara (${sorted[0].percent.toFixed(1)}%)`;
+      } else {
+        document.getElementById("stat-top-teacher").textContent = "Belum ada suara";
+        document.getElementById("stat-top-votes").textContent = "Jadilah pemilih pertama!";
+      }
+    }
+
+    function renderTeacherGrid() {
+      const grid = document.getElementById("teacher-grid");
+      const empty = document.getElementById("teacher-empty");
+      const stats = getTeacherVoteStats();
+      const query = state.searchQuery.trim().toLowerCase();
+
+      const filtered = stats.filter((t) => {
+        const matchSubject = state.subjectFilter === "ALL" || t.subject === state.subjectFilter;
+        const matchQuery = !query || t.name.toLowerCase().includes(query) || t.subject.toLowerCase().includes(query);
+        return matchSubject && matchQuery;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = "";
+        empty.classList.remove("hidden");
+        return;
+      }
+      empty.classList.add("hidden");
+
+      grid.innerHTML = filtered
+        .map((t) => {
+          const initials = getInitials(t.name);
+          const badgeClass = getSubjectColor(t.subject);
+          const avatarGrad = getAvatarGradient(t.id);
+          return `
+            <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:border-emerald-300 transition p-4 sm:p-5 flex flex-col justify-between group">
+              <div>
+                <div class="flex items-start gap-3.5">
+                  <div class="w-12 h-12 rounded-2xl bg-gradient-to-br ${avatarGrad} text-white font-extrabold flex items-center justify-center text-sm shadow-sm shrink-0 group-hover:scale-105 transition">
+                    ${escapeHtml(initials)}
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base leading-snug line-clamp-2">${escapeHtml(t.name)}</h3>
+                    <span class="inline-block mt-1.5 px-2.5 py-0.5 rounded-lg border text-[11px] font-semibold ${badgeClass}">
+                      ${escapeHtml(t.subject)}
+                    </span>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <div class="flex items-center justify-between text-xs mb-1">
+                    <span class="text-slate-500 font-medium">Perolehan Suara</span>
+                    <span class="font-extrabold text-emerald-700">${t.votes} suara <span class="text-slate-400 font-normal">(${t.percent.toFixed(1)}%)</span></span>
+                  </div>
+                  <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full transition-all duration-500" style="width: ${Math.max(t.percent, t.votes > 0 ? 4 : 0)}%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2">
+                <button
+                  type="button"
+                  data-vote-id="${t.id}"
+                  class="btn-vote-teacher flex-1 py-2.5 px-3 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-bold shadow-sm transition active:scale-95 flex items-center justify-center gap-1.5"
+                >
+                  <i data-lucide="thumbs-up" class="w-4 h-4"></i>
+                  <span>Pilih Guru Ini</span>
+                </button>
+                <button
+                  type="button"
+                  data-letter-teacher="${escapeHtml(t.name)}"
+                  class="btn-quick-letter p-2.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-700 border border-amber-200 transition active:scale-95"
+                  title="Kirim Surat untuk ${escapeHtml(t.name)}"
+                >
+                  <i data-lucide="mail-plus" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+          `;
+        })
+        .join("");
+
+      lucide.createIcons({ root: grid });
+    }
+
+    function renderRealtimeDashboard() {
+      const stats = getTeacherVoteStats().sort((a, b) => b.votes - a.votes || a.name.localeCompare(b.name));
+      const totalVotes = state.votes.length;
+      document.getElementById("leaderboard-total-badge").textContent = `${totalVotes} total suara`;
+
+      const podium = document.getElementById("podium-container");
+      const medals = [
+        { rank: "Juara #1", bg: "from-amber-400 via-amber-500 to-yellow-500", border: "border-amber-300", badge: "bg-amber-100 text-amber-900", icon: "crown" },
+        { rank: "Juara #2", bg: "from-slate-400 via-slate-500 to-slate-600", border: "border-slate-300", badge: "bg-slate-100 text-slate-800", icon: "medal" },
+        { rank: "Juara #3", bg: "from-orange-400 via-amber-600 to-orange-700", border: "border-orange-300", badge: "bg-orange-100 text-orange-900", icon: "award" }
+      ];
+
+      podium.innerHTML = stats
+        .slice(0, 3)
+        .map((t, idx) => {
+          const m = medals[idx];
+          return `
+            <div class="bg-white rounded-2xl border-2 ${m.border} shadow-sm p-5 relative overflow-hidden">
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-extrabold ${m.badge}">
+                  <i data-lucide="${m.icon}" class="w-3.5 h-3.5"></i>
+                  ${m.rank}
+                </span>
+                <span class="text-xs font-extrabold text-slate-400">${t.percent.toFixed(1)}%</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br ${m.bg} text-white font-extrabold flex items-center justify-center shadow-sm shrink-0">
+                  ${escapeHtml(getInitials(t.name))}
+                </div>
+                <div class="min-w-0">
+                  <div class="font-extrabold text-slate-900 text-sm sm:text-base truncate">${escapeHtml(t.name)}</div>
+                  <div class="text-xs text-slate-500 truncate">${escapeHtml(t.subject)}</div>
+                </div>
+              </div>
+              <div class="mt-4 flex items-end justify-between">
+                <span class="text-2xl font-extrabold text-slate-900">${t.votes} <span class="text-xs font-semibold text-slate-400">suara</span></span>
+              </div>
+            </div>
+          `;
+        })
+        .join("");
+      lucide.createIcons({ root: podium });
+
+      const list = document.getElementById("leaderboard-list");
+      list.innerHTML = stats
+        .map((t, idx) => {
+          const rankColor = idx === 0 ? "bg-amber-400 text-amber-950" : idx === 1 ? "bg-slate-300 text-slate-800" : idx === 2 ? "bg-orange-300 text-orange-950" : "bg-slate-100 text-slate-600";
+          return `
+            <div class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition border border-transparent hover:border-slate-200/70">
+              <div class="w-7 h-7 rounded-lg ${rankColor} font-extrabold text-xs flex items-center justify-center shrink-0">
+                ${idx + 1}
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center justify-between gap-2 mb-1">
+                  <div class="truncate">
+                    <span class="font-bold text-slate-800 text-xs sm:text-sm">${escapeHtml(t.name)}</span>
+                    <span class="hidden sm:inline text-[11px] text-slate-400 ml-1.5">• ${escapeHtml(t.subject)}</span>
+                  </div>
+                  <span class="text-xs font-extrabold text-emerald-700 shrink-0">${t.votes} <span class="text-slate-400 font-medium">(${t.percent.toFixed(1)}%)</span></span>
+                </div>
+                <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-emerald-600 to-teal-400 rounded-full transition-all duration-500" style="width: ${Math.max(t.percent, t.votes > 0 ? 3 : 0)}%"></div>
+                </div>
+              </div>
+            </div>
+          `;
+        })
+        .join("");
+
+      const feed = document.getElementById("recent-votes-list");
+      if (state.votes.length === 0) {
+        feed.innerHTML = `<div class="text-center py-10 text-slate-400 text-xs">Belum ada aktivitas vote masuk.</div>`;
+      } else {
+        feed.innerHTML = state.votes
+          .slice(0, 25)
+          .map(
+            (v) => `
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/70 text-xs">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-slate-800 truncate">${escapeHtml(v.studentName)}</span>
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 font-bold text-[10px] shrink-0">${escapeHtml(v.studentClass)}</span>
+                </div>
+                <div class="text-slate-600 mt-1">
+                  Memilih <span class="font-semibold text-emerald-700">${escapeHtml(v.teacherName)}</span>
+                </div>
+                <div class="text-[10px] text-slate-400 mt-1">${escapeHtml(formatTime(v.createdAt || v.timestamp))}</div>
+              </div>
+            `
+          )
+          .join("");
+      }
+    }
+
+    function renderLettersWall() {
+      const grid = document.getElementById("letters-grid");
+      const empty = document.getElementById("letters-empty");
+      const filtered = state.letters.filter((l) => state.letterTeacherFilter === "ALL" || l.teacherName === state.letterTeacherFilter);
+
+      if (filtered.length === 0) {
+        grid.innerHTML = "";
+        empty.classList.remove("hidden");
+        return;
+      }
+      empty.classList.add("hidden");
+
+      const themeStyles = {
+        emerald: "border-t-emerald-600 bg-gradient-to-b from-emerald-50/50 to-white",
+        amber: "border-t-amber-500 bg-gradient-to-b from-amber-50/50 to-white",
+        rose: "border-t-rose-500 bg-gradient-to-b from-rose-50/50 to-white",
+        sky: "border-t-sky-500 bg-gradient-to-b from-sky-50/50 to-white"
+      };
+
+      grid.innerHTML = filtered
+        .map((l, idx) => {
+          const tStyle = themeStyles[l.theme] || themeStyles.emerald;
+          return `
+            <article
+              data-letter-index="${idx}"
+              class="letter-card cursor-pointer rounded-2xl border border-slate-200/80 border-t-4 ${tStyle} p-4 sm:p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between"
+            >
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-2">
+                  <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Untuk:</span>
+                  <span class="text-[10px] text-slate-400">${escapeHtml(formatTime(l.createdAt || l.timestamp))}</span>
+                </div>
+                <h4 class="font-extrabold text-slate-900 text-sm leading-snug mb-2.5">${escapeHtml(l.teacherName)}</h4>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-4 italic">"${escapeHtml(l.message)}"</p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between gap-2">
+                <div class="min-w-0">
+                  <div class="text-xs font-bold text-slate-800 truncate">${escapeHtml(l.studentName)}</div>
+                  <div class="text-[11px] font-semibold text-emerald-700">${escapeHtml(l.studentClass)}</div>
+                </div>
+                <span class="text-[11px] font-bold text-emerald-700 inline-flex items-center gap-1 shrink-0">
+                  Baca <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                </span>
+              </div>
+            </article>
+          `;
+        })
+        .join("");
+
+      lucide.createIcons({ root: grid });
+
+      grid.querySelectorAll(".letter-card").forEach((card) => {
+        card.addEventListener("click", () => {
+          const item = filtered[Number(card.dataset.letterIndex)];
+          if (item) openLetterViewer(item);
+        });
+      });
+    }
+
+    function renderAll() {
+      renderSummaryStats();
+      renderTeacherGrid();
+      renderRealtimeDashboard();
+      renderLettersWall();
+    }
+
+    async function saveVote(teacher, studentName, studentClass) {
+      const now = Date.now();
+      const record = {
+        type: "vote",
+        teacherId: teacher.id,
+        teacherName: teacher.name,
+        teacherSubject: teacher.subject,
+        studentName: studentName.trim(),
+        studentClass: studentClass.trim(),
+        createdAt: new Date(now).toISOString(),
+        timestamp: now
+      };
+
+      if (state.firebaseReady && state.currentUser && state.db) {
+        await addDoc(collection(state.db, "artifacts", state.appId, "public", "data", "votes"), record);
+      } else {
+        state.votes.unshift({ id: "local-" + now, ...record });
+        saveLocalCache();
+        renderAll();
+      }
+
+      await sendToGoogleSheet(record);
+    }
+
+    async function saveLetter(teacherName, studentName, studentClass, message, theme) {
+      const now = Date.now();
+      const teacherObj = TEACHERS.find((t) => t.name === teacherName);
+      const record = {
+        type: "letter",
+        teacherName,
+        teacherSubject: teacherObj ? teacherObj.subject : "Umum / Seluruh Guru",
+        studentName: studentName.trim(),
+        studentClass: studentClass.trim(),
+        message: message.trim(),
+        theme: theme || "emerald",
+        createdAt: new Date(now).toISOString(),
+        timestamp: now
+      };
+
+      if (state.firebaseReady && state.currentUser && state.db) {
+        await addDoc(collection(state.db, "artifacts", state.appId, "public", "data", "letters"), record);
+      } else {
+        state.letters.unshift({ id: "local-" + now, ...record });
+        saveLocalCache();
+        renderAll();
+      }
+
+      await sendToGoogleSheet(record);
+    }
+
+    function downloadCSV(filename, headers, rows) {
+      const csvRows = [
+        headers.join(","),
+        ...rows.map((r) => r.map((cell) => `"${String(cell ?? "").replace(/"/g, '""')}"`).join(","))
+      ];
+      const blob = new Blob(["\uFEFF" + csvRows.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast(`File ${filename} berhasil diunduh!`, "success");
+    }
+
+    function openVoteModal(teacherId) {
+      const teacher = TEACHERS.find((t) => t.id === Number(teacherId));
+      if (!teacher) return;
+      document.getElementById("vote-teacher-id").value = teacher.id;
+      document.getElementById("modal-teacher-name").textContent = teacher.name;
+      document.getElementById("modal-teacher-subject").textContent = teacher.subject;
+      const av = document.getElementById("modal-teacher-avatar");
+      av.textContent = getInitials(teacher.name);
+      av.className = `w-12 h-12 rounded-2xl bg-gradient-to-br ${getAvatarGradient(teacher.id)} text-white font-extrabold flex items-center justify-center text-base shrink-0`;
+
+      document.getElementById("vote-modal").classList.remove("hidden");
+      document.getElementById("vote-modal").classList.add("flex");
+      setTimeout(() => document.getElementById("vote-student-name").focus(), 100);
+    }
+
+    function closeVoteModal() {
+      document.getElementById("vote-modal").classList.add("hidden");
+      document.getElementById("vote-modal").classList.remove("flex");
+      document.getElementById("vote-form").reset();
+      document.getElementById("vote-quick-letter-wrap").classList.add("hidden");
+    }
+
+    function openLetterViewer(letter) {
+      const borderMap = {
+        emerald: "border-emerald-600",
+        amber: "border-amber-500",
+        rose: "border-rose-500",
+        sky: "border-sky-500"
+      };
+      const card = document.getElementById("letter-view-card");
+      card.className = `bg-white rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden fade-in border-t-8 ${borderMap[letter.theme] || "border-emerald-600"}`;
+      document.getElementById("view-letter-teacher").textContent = `Kepada Yth. ${letter.teacherName}`;
+      document.getElementById("view-letter-body").textContent = `"${letter.message}"`;
+      document.getElementById("view-letter-sender").textContent = `${letter.studentName} (${letter.studentClass})`;
+      document.getElementById("view-letter-time").textContent = formatTime(letter.createdAt || letter.timestamp);
+
+      const modal = document.getElementById("letter-view-modal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function switchTab(tabName) {
+      state.activeTab = tabName;
+      document.querySelectorAll(".tab-panel").forEach((p) => p.classList.add("hidden"));
+      document.getElementById(`panel-${tabName}`).classList.remove("hidden");
+
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        if (btn.dataset.tab === tabName) {
+          btn.className = "tab-btn flex-1 flex items-center justify-center gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold transition bg-emerald-700 text-white shadow-sm";
+        } else {
+          btn.className = "tab-btn flex-1 flex items-center justify-center gap-2 py-2.5 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-bold transition text-slate-600 hover:bg-slate-100";
+        }
+      });
+    }
+
+    function populateDropdowns() {
+      const subjects = [...new Set(TEACHERS.map((t) => t.subject))].sort();
+      const filterSub = document.getElementById("filter-subject");
+      subjects.forEach((s) => {
+        const opt = document.createElement("option");
+        opt.value = s;
+        opt.textContent = s;
+        filterSub.appendChild(opt);
+      });
+
+      const letterTeacherSelect = document.getElementById("letter-teacher-select");
+      const filterLetterTeacher = document.getElementById("filter-letter-teacher");
+      TEACHERS.forEach((t) => {
+        const opt1 = document.createElement("option");
+        opt1.value = t.name;
+        opt1.textContent = `${t.name} (${t.subject})`;
+        letterTeacherSelect.appendChild(opt1);
+
+        const opt2 = document.createElement("option");
+        opt2.value = t.name;
+        opt2.textContent = t.name;
+        filterLetterTeacher.appendChild(opt2);
+      });
+    }
+
+    function bindEvents() {
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+      });
+
+      document.getElementById("search-teacher").addEventListener("input", (e) => {
+        state.searchQuery = e.target.value;
+        renderTeacherGrid();
+      });
+      document.getElementById("filter-subject").addEventListener("change", (e) => {
+        state.subjectFilter = e.target.value;
+        renderTeacherGrid();
+      });
+
+      document.getElementById("teacher-grid").addEventListener("click", (e) => {
+        const voteBtn = e.target.closest(".btn-vote-teacher");
+        if (voteBtn) {
+          openVoteModal(voteBtn.dataset.voteId);
+          return;
+        }
+        const letterBtn = e.target.closest(".btn-quick-letter");
+        if (letterBtn) {
+          switchTab("letters");
+          document.getElementById("letter-teacher-select").value = letterBtn.dataset.letterTeacher;
+          document.getElementById("letter-student-name").focus();
+        }
+      });
+
+      document.getElementById("close-vote-modal").addEventListener("click", closeVoteModal);
+      document.getElementById("cancel-vote-modal").addEventListener("click", closeVoteModal);
+      document.getElementById("vote-include-letter").addEventListener("change", (e) => {
+        document.getElementById("vote-quick-letter-wrap").classList.toggle("hidden", !e.target.checked);
+      });
+
+      document.getElementById("vote-form").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const teacherId = Number(document.getElementById("vote-teacher-id").value);
+        const teacher = TEACHERS.find((t) => t.id === teacherId);
+        const studentName = document.getElementById("vote-student-name").value.trim();
+        const grade = document.getElementById("vote-class-grade").value;
+        const room = document.getElementById("vote-class-room").value.trim().toUpperCase();
+        const includeLetter = document.getElementById("vote-include-letter").checked;
+        const quickMsg = document.getElementById("vote-quick-letter").value.trim();
+
+        if (!teacher || !studentName || !grade || !room) {
+          showToast("Mohon lengkapi Nama Lengkap dan Kelas Anda!", "error");
+          return;
+        }
+
+        const studentClass = `Kelas ${grade} ${room}`;
+        const alreadyVoted = state.votes.some(
+          (v) => v.studentName.toLowerCase() === studentName.toLowerCase() && v.studentClass.toLowerCase() === studentClass.toLowerCase()
+        );
+        if (alreadyVoted) {
+          showToast(`Maaf, ${studentName} (${studentClass}) sudah pernah memberikan suara!`, "error");
+          return;
+        }
+
+        const btn = document.getElementById("btn-confirm-vote");
+        btn.disabled = true;
+        btn.innerHTML = `<span>Menyimpan...</span>`;
+
+        try {
+          await saveVote(teacher, studentName, studentClass);
+          if (includeLetter && quickMsg) {
+            await saveLetter(teacher.name, studentName, studentClass, quickMsg, "emerald");
+          }
+          closeVoteModal();
+          launchConfetti();
+          showToast(`Terima kasih ${studentName}! Vote untuk ${teacher.name} berhasil tercatat.`, "success");
+        } catch (err) {
+          console.error(err);
+          showToast("Terjadi kesalahan saat mengirim vote. Silakan coba lagi.", "error");
+        } finally {
+          btn.disabled = false;
+          btn.innerHTML = `<i data-lucide="heart-handshake" class="w-4 h-4"></i><span>Kirim Vote Sekarang</span>`;
+          lucide.createIcons({ root: btn });
+        }
+      });
+
+      document.querySelectorAll(".theme-chip").forEach((chip) => {
+        chip.addEventListener("click", () => {
+          state.selectedTheme = chip.dataset.theme;
+          document.querySelectorAll(".theme-chip").forEach((c) => {
+            c.classList.remove("border-2", "border-emerald-600", "ring-2", "ring-emerald-400/50");
+            c.classList.add("border", "border-slate-200");
+          });
+          chip.classList.remove("border", "border-slate-200");
+          chip.classList.add("border-2", "border-emerald-600", "ring-2", "ring-emerald-400/50");
+        });
+      });
+
+      const msgInput = document.getElementById("letter-message");
+      msgInput.addEventListener("input", () => {
+        document.getElementById("letter-char-count").textContent = msgInput.value.length;
+      });
+
+      document.getElementById("btn-inspire-msg").addEventListener("click", () => {
+        const randomMsg = INSPIRATION_MESSAGES[Math.floor(Math.random() * INSPIRATION_MESSAGES.length)];
+        msgInput.value = randomMsg;
+        document.getElementById("letter-char-count").textContent = randomMsg.length;
+      });
+
+      document.getElementById("letter-form").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const studentName = document.getElementById("letter-student-name").value.trim();
+        const grade = document.getElementById("letter-class-grade").value;
+        const room = document.getElementById("letter-class-room").value.trim().toUpperCase();
+        const teacherName = document.getElementById("letter-teacher-select").value;
+        const message = msgInput.value.trim();
+
+        if (!studentName || !grade || !room || !teacherName || !message) {
+          showToast("Mohon lengkapi semua kolom surat ucapan!", "error");
+          return;
+        }
+
+        const studentClass = `Kelas ${grade} ${room}`;
+        const btn = document.getElementById("btn-submit-letter");
+        btn.disabled = true;
+        btn.innerHTML = `<span>Mengirim Surat...</span>`;
+
+        try {
+          await saveLetter(teacherName, studentName, studentClass, message, state.selectedTheme);
+          document.getElementById("letter-form").reset();
+          document.getElementById("letter-char-count").textContent = "0";
+          launchConfetti();
+          showToast(`Surat ucapan untuk ${teacherName} berhasil dikirim!`, "success");
+        } catch (err) {
+          console.error(err);
+          showToast("Gagal mengirim surat. Silakan coba lagi.", "error");
+        } finally {
+          btn.disabled = false;
+          btn.innerHTML = `<i data-lucide="send" class="w-4 h-4"></i><span>Kirim Surat &amp; Simpan ke Spreadsheet</span>`;
+          lucide.createIcons({ root: btn });
+        }
+      });
+
+      document.getElementById("filter-letter-teacher").addEventListener("change", (e) => {
+        state.letterTeacherFilter = e.target.value;
+        renderLettersWall();
+      });
+
+      document.getElementById("close-letter-view").addEventListener("click", () => {
+        document.getElementById("letter-view-modal").classList.add("hidden");
+        document.getElementById("letter-view-modal").classList.remove("flex");
+      });
+
+      document.getElementById("gas-code-block").textContent = GAS_SCRIPT_CODE;
+      document.getElementById("btn-open-sheet-modal").addEventListener("click", () => {
+        document.getElementById("sheet-modal").classList.remove("hidden");
+        document.getElementById("sheet-modal").classList.add("flex");
+      });
+      document.getElementById("close-sheet-modal").addEventListener("click", () => {
+        document.getElementById("sheet-modal").classList.add("hidden");
+        document.getElementById("sheet-modal").classList.remove("flex");
+      });
+
+      document.getElementById("btn-copy-gas-code").addEventListener("click", () => {
+        const ta = document.createElement("textarea");
+        ta.value = GAS_SCRIPT_CODE;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand("copy");
+          showToast("Kode Google Apps Script berhasil disalin!", "success");
+        } catch (err) {
+          showToast("Gagal menyalin otomatis. Silakan blok & salin manual.", "error");
+        }
+        document.body.removeChild(ta);
+      });
+
+      document.getElementById("btn-save-gas-url").addEventListener("click", async () => {
+        const url = document.getElementById("gas-url-input").value.trim();
+        if (url && !url.startsWith("https://script.google.com/")) {
+          showToast("URL harus diawali dengan https://script.google.com/", "error");
+          return;
+        }
+        state.gasUrl = url;
+        saveLocalCache();
+        updateSpreadsheetStatusUI();
+
+        if (state.firebaseReady && state.currentUser && state.db) {
+          try {
+            await setDoc(doc(state.db, "artifacts", state.appId, "public", "data", "settings", "spreadsheet"), {
+              gasUrl: url,
+              updatedAt: Date.now()
+            });
+          } catch (err) {
+            console.error("Gagal simpan konfigurasi:", err);
+          }
+        }
+        showToast(url ? "URL Spreadsheet tersimpan & siap sinkron otomatis!" : "Koneksi URL Spreadsheet dihapus.", "success");
+      });
+
+      document.getElementById("btn-refresh-sheet").addEventListener("click", () => fetchFromGoogleSheet(false));
+
+      document.getElementById("btn-export-votes-csv").addEventListener("click", () => {
+        downloadCSV(
+          "Rekap_Voting_HariGuru_MTsN1Boalemo.csv",
+          ["Waktu", "Nama Lengkap Siswa", "Kelas", "Nama Guru Favorit", "Mata Pelajaran"],
+          state.votes.map((v) => [formatTime(v.createdAt || v.timestamp), v.studentName, v.studentClass, v.teacherName, v.teacherSubject])
+        );
+      });
+
+      document.getElementById("btn-export-letters-csv").addEventListener("click", () => {
+        downloadCSV(
+          "Rekap_SuratUcapan_HariGuru_MTsN1Boalemo.csv",
+          ["Waktu", "Nama Lengkap Siswa", "Kelas", "Guru Tujuan", "Isi Surat / Ucapan"],
+          state.letters.map((l) => [formatTime(l.createdAt || l.timestamp), l.studentName, l.studentClass, l.teacherName, l.message])
+        );
+      });
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      loadLocalCache();
+      populateDropdowns();
+      bindEvents();
+      updateSpreadsheetStatusUI();
+      renderAll();
+      lucide.createIcons();
+      initFirebase();
+      fetchFromGoogleSheet(true);
+    });
+  </script>
+</body>
+</html>
